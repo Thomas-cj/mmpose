@@ -1,0 +1,2 @@
+File "c:\users\tchar\documents\github\mmpose\mmpose\apis\inference.py" changed weights_only= False in load function, unsafe but necessary
+C:\Users\tchar\miniconda3\envs\rtmpose\lib\site-packages\torch\serialization.py
