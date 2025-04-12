@@ -74,7 +74,8 @@ model = dict(
     head=dict(
         type='RTMCCHead',
         in_channels=1024,
-        out_channels=17,
+        #out_channels=17,
+        out_channels=15,
         input_size=codec['input_size'],
         in_featuremap_size=tuple([s // 32 for s in codec['input_size']]),
         simcc_split_ratio=codec['simcc_split_ratio'],
@@ -90,6 +91,7 @@ model = dict(
             pos_enc=False),
         loss=dict(
             type='KLDiscretLoss',
+            
             use_target_weight=True,
             beta=10.,
             label_softmax=True),
@@ -177,7 +179,8 @@ train_pipeline_stage2 = [
 
 # data loaders
 train_dataloader = dict(
-    batch_size=256,
+    #batch_size=256,
+    batch_size=1,
     num_workers=10,
     persistent_workers=True,
     sampler=dict(type='DefaultSampler', shuffle=True),
@@ -190,7 +193,8 @@ train_dataloader = dict(
         pipeline=train_pipeline,
     ))
 val_dataloader = dict(
-    batch_size=64,
+    #batch_size=64,
+    batch_size=1,
     num_workers=10,
     persistent_workers=True,
     drop_last=False,
