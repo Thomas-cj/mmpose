@@ -130,7 +130,6 @@ class BaseCocoStyleDataset(BaseDataset):
         Returns:
             dict: Parsed meta information.
         """
-
         if metainfo is None:
             metainfo = deepcopy(cls.METAINFO)
 
