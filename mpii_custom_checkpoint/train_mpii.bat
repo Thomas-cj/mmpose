@@ -1,0 +1,1 @@
+python tools/train.py mpii_custom_checkpoint\rtmpose-m_8xb64-210e_mpii-256x256_custom.py  --resume mpii_custom_checkpoint\rtmpose-m_simcc-mpii_pt-aic-coco_210e-256x256-ec4dbec8_20230206.pth
