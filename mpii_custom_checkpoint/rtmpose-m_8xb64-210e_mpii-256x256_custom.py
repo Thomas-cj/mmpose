@@ -96,7 +96,7 @@ model = dict(
     test_cfg=dict(flip_test=True))
 
 # base dataset settings
-dataset_type = 'CocoDataset'
+dataset_type = 'MpiiDataset'
 data_mode = 'topdown'
 data_root = 'data/SwimDK_small/'
 
@@ -184,7 +184,7 @@ train_dataloader = dict(
         type=dataset_type,
         data_root=data_root,
         data_mode=data_mode,
-        ann_file='annotations/SwimDK_Small_train.json',
+        ann_file='annotations/mpii_train.json',
         data_prefix=dict(img='SwimDK_small_train/'),
         pipeline=train_pipeline,
     ))
@@ -198,7 +198,7 @@ val_dataloader = dict(
         type=dataset_type,
         data_root=data_root,
         data_mode=data_mode,
-        ann_file='annotations/SwimDK_small_val.json',
+        ann_file='annotations/mpii_val.json',
         #headbox_file=f'{data_root}/annotations/mpii_gt_val.mat',
         data_prefix=dict(img='SwimDK_small_val/'),
         test_mode=True,
