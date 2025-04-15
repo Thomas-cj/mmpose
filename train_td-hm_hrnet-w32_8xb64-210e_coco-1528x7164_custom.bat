@@ -1,0 +1,1 @@
+python tools/train.py td-hm_hrnet-w32_8xb64-210e_coco-1528x7164_custom.py 
