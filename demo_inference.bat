@@ -1,0 +1,1 @@
+python demo/bottomup_demo.py configs/body_2d_keypoint/dekr/coco/dekr_hrnet-w32_8xb10-140e_coco-512x512.py https://download.openmmlab.com/mmpose/v1/body_2d_keypoint/dekr/coco/dekr_hrnet-w32_8xb10-140e_coco-512x512_ac7c17bf-20221228.pth --input demo/resources/1163838879.mp4 --output-root=vis_results  --save-predictions
