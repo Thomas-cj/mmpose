@@ -6,7 +6,7 @@ We provide demo scripts to perform human pose estimation on images or videos.
 
 #### Use full image as input
 
-We provide a demo script to test a single image, using the full image as input bounding box.
+We provide a demo script to test a single image, using the full image as input bounding box. 
 
 ```shell
 python demo/image_demo.py \
