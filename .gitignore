@@ -115,7 +115,11 @@ mmpose/.mim
 *.pkl.json
 *.log.json
 *.npy
+
+# video files
 *.mp4
+*.avi
+
 #work_dirs/
 docs/**/topics/
 docs/**/papers/*.md
